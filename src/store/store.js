@@ -142,15 +142,14 @@ export default new Vuex.Store({
     actions: {
         async consumeApiAnime(context) {
 
-                try {
-                  const response = await api.get();
-           
-                  context.commit('setCategoriesAnime', response.data);
-                  context.commit('setAnimeInitial');
+            try {
+                const response = await api.get();
+                context.commit('setCategoriesAnime', response.data);
+                context.commit('setAnimeInitial');
 
-                } catch (err) {
-                  console.log('Erro:', err);
-                }
+            } catch (err) {
+                console.log('Erro:', err);
+            }
            
         },
         changeInfoAnimeMain(context, payload) {
