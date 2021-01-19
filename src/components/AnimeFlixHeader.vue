@@ -5,9 +5,9 @@
             
             <nav>
                 <router-link to="/" class="btn mr-5">Início</router-link>
-                <router-link to="/series" class="btn mr-5">Animes</router-link>
-                <a href="#">Categorias</a>
-                <a href="#">Sobre</a>
+                <router-link to="/animes" class="btn mr-5">Animes</router-link>
+                <router-link to="/categorias" class="btn mr-5">Categorias</router-link>
+                <router-link to="/sobre" class="btn mr-5">Sobre</router-link>
             </nav>
             <input type="text" placeholder="Pesquisar anime">
         </div>
