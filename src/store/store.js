@@ -112,6 +112,31 @@ export default new Vuex.Store({
                 state.modalSinopse = anime.sinopse;
                 state.modalFuncaoResponsavel = anime.cargo;
                 state.modalNameResponsavel = anime.autor;          
+        },
+        setInfoAnimeMain(state, payload) {
+ 
+            let categoryAnime = state.categoriesAnime.find(item => {
+                return (item.category == payload.category)
+            });
+
+            let anime = categoryAnime.animes.find(item => {
+                return (item.id == payload.id)
+            });
+
+            state.id = payload.id;
+            state.category = payload.category;
+            state.imageBackground = anime.imageBackground;
+           
+            state.titleAnimeMain = anime.title;
+
+            state.resumeAnime = anime.resume;
+            state.linkTrailerAnime = anime.linkVideo;
+
+            state.modalYear = anime.year;
+            state.modalInfoAnime = anime.info;
+            state.modalSinopse = anime.sinopse;
+            state.modalFuncaoResponsavel = anime.cargo;
+            state.modalNameResponsavel = anime.autor;
         }
     },
     actions: {
@@ -127,6 +152,9 @@ export default new Vuex.Store({
                   console.log('Erro:', err);
                 }
            
+        },
+        changeInfoAnimeMain(context, payload) {
+            context.commit('setInfoAnimeMain', payload);
         }
     }
 })
