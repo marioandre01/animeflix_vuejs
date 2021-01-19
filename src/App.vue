@@ -6,11 +6,13 @@
 
 <script>
 
-
 export default {
   name: 'App',
   components: {
 
+  },
+  created() {
+    this.$store.dispatch("consumeApiAnime");  
   }
 }
 </script>
