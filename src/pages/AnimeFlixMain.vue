@@ -8,6 +8,7 @@
             v-bind:key="category.id" 
             v-bind:animes="category.animes" 
         />
+        <Footer />
     </div>
 </template>
 
@@ -15,6 +16,7 @@
 import Header from './../components/AnimeFlixHeader'
 import AnimeMain from './../components/AnimeFlixAnimeMain'
 import Category from './../components/AnimeFlixCategory'
+import Footer from './../components/AnimeFlixFooter'
 
 import { mapGetters } from 'vuex'
 
@@ -22,7 +24,8 @@ export default {
     components: {
         Header,
         AnimeMain,
-        Category
+        Category,
+        Footer
     },
     data() {
         return {
