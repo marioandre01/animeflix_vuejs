@@ -21,15 +21,9 @@
 
 ## 💻 Projeto
 
-Esse projeto foi desenvolvido com o objetivo de praticar os conhecimentos adquiridos sobre o framework Vue.js. A ideia foi desenvolver o front-end de uma SPA (Single-Page Application) de um streaming de Animes chamada "ANIMEFLIX" aplicando os principais recursos oferecidos pelo vue.js. Nessa aplicação seu usou:
+Esse projeto foi desenvolvido com o objetivo de praticar os conhecimentos adquiridos sobre o framework Vue.js. A ideia foi desenvolver o front-end de uma SPA (Single-Page Application) de um streaming de Animes chamada "ANIMEFLIX" aplicando os principais recursos oferecidos pelo vue.js.
 
-- Componentes
-- Diretivas
-- Eventos
-- VueEx
-- VueRouter
-
-O resultado da aplicação pode ser acessado através da seguinte URL:
+O resultado da aplicação pode ser acessado através da seguinte URL:[https://animmeflix.netlify.app/](https://animmeflix.netlify.app/)
 
 
 ## 📋 Tecnologias
