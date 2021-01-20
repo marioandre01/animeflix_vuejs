@@ -247,4 +247,30 @@ export default {
     color: var(--preta);
   }
 
+/* Responsividade */
+@media screen and (max-width:616px) {
+    .botoes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .botao {
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .modal .modal-info {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .descricao {
+        width: 50%;
+    }
+}
+
 </style>

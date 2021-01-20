@@ -61,4 +61,13 @@ header input {
     border-radius: 5px;
 }
 
+/* Responsividade */
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
+
 </style>

@@ -5,7 +5,11 @@
     </div>
 
     <div class="carousel">
-      <Carousel :items="5" :margin="5" :loop="true" :nav="false">
+      <Carousel :responsive="{
+        0:{items:1,nav:false,margin:5,loop:true},
+        600:{items:3,nav:false,margin:5,loop:true},
+        1000:{items:5,nav:false,margin:5,loop:true}
+      }">
         <img
           @click="goToPage(`${category}`, `${anime.id}`)"
           class="box-filme"
